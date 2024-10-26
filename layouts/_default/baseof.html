@@ -29,7 +29,10 @@
         {{ partial "navbar-home.html" . }}
     {{ end }}
     
-    {{ partial "breadcrumbs.html" . }}
+    <!-- Render breadcrumbs -->
+    <div class="breadcrumb-container">
+        {{ partial "breadcrumbs.html" . }}
+    </div>
     
     <main>
         {{ block "main" . }}{{ end }}

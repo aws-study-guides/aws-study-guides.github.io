@@ -3,7 +3,7 @@
     <a href="/" class="breadcrumb-home">Home</a> >
     
     {{ if .Section }}
-        <a href="/{{ .Section }}/">{{ .Section | title }}</a> >
+        <a class="guide" href="/{{ .Section }}/">{{ .Section | title }}</a> >
     {{ end }}
     
     {{ with .Page }}
