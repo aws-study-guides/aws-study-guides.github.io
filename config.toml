@@ -6,6 +6,8 @@ description = "Explore comprehensive AWS Certification Study Guides, including r
 
 author = "Reese Gerjekian"
 
+image = "/images/icons/icon-512x512.png"
+
 [outputs]
 page = ["HTML"]
 
