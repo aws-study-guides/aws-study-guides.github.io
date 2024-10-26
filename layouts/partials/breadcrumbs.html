@@ -1,0 +1,16 @@
+<!-- layouts/partials/breadcrumbs.html -->
+<nav class="breadcrumbs">
+    <a href="/" class="breadcrumb-home">Home</a> >
+    
+    {{ if .Section }}
+        <a href="/{{ .Section }}/">{{ .Section | title }}</a> >
+    {{ end }}
+    
+    {{ with .Page }}
+        <span class="breadcrumb-current">{{ .Title }}</span>
+    {{ else }}
+        {{ with .File }}
+            <span class="breadcrumb-current">{{ .BaseFileName | title }}</span>
+        {{ end }}
+    {{ end }}
+</nav>

@@ -1,0 +1,9 @@
+baseURL = "https://aws-study-guides.github.io"
+languageCode = "en-us"
+title = "AWS Study Guides"
+
+[outputs]
+page = ["HTML"]
+
+[params]
+buildSections = true

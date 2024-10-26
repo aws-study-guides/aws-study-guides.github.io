@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAA-C03 Practice Test</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+        
+<nav class="navbar">
+    <a href="/" class="navbar-title">AWS Study Guides</a> >
+    <span class="navbar-section"><a href="/saa/">Saa</a></span>
+    <div class="navbar-links">
+        
+            <a href="/saa/overview/">Exam Overview</a>
+        
+        
+            <a href="/saa/flashcards/">Flashcards</a>
+        
+        
+            <a href="/saa/quiz/">Practice Test</a>
+        
+    </div>
+</nav>
+    
+    
+    
+<nav class="breadcrumbs">
+    <a href="/" class="breadcrumb-home">Home</a> >
+    
+    
+        <a href="/saa/">Saa</a> >
+    
+    
+    
+        <span class="breadcrumb-current">SAA-C03 Practice Test</span>
+    
+</nav>
+    
+    <main>
+        
+<div class="container">
+    <h1>SAA-C03 Practice Test</h1>
+    
+<div class="quiz">
+    <div id="result"></div>
+    <form id="test-form"></form>
+    <button class="submit-all" onclick="submitTest()">Submit Test</button>
+</div>
+
+
+<button id="goTop" onclick="scrollToTop()">↥</button>
+<button id="goBottom" onclick="scrollToBottom()">↧</button>
+
+<script>
+    const questionSet = "json\/SAA_Qs_Final_With_Options.json";
+    
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
+    
+    function scrollToTopAfterSubmit() {
+        scrollToTop();
+    }
+</script>
+<script src="/js/main.js" defer></script>
+
+</div>
+
+    </main>
+</body>
+</html>

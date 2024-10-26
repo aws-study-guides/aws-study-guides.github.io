@@ -1,0 +1,16 @@
+<!-- layouts/partials/navbar-study-guide.html -->
+<nav class="navbar">
+    <a href="/" class="navbar-title">AWS Study Guides</a> >
+    <span class="navbar-section"><a href="/{{ .Section }}/">{{ .Section | title }}</a></span>
+    <div class="navbar-links">
+        {{ if (fileExists (printf "content/%s/overview.md" .Section)) }}
+            <a href="/{{ .Section }}/overview/">Exam Overview</a>
+        {{ end }}
+        {{ if (fileExists (printf "content/%s/flashcards.md" .Section)) }}
+            <a href="/{{ .Section }}/flashcards/">Flashcards</a>
+        {{ end }}
+        {{ if (fileExists (printf "content/%s/quiz.md" .Section)) }}
+            <a href="/{{ .Section }}/quiz/">Practice Test</a>
+        {{ end }}
+    </div>
+</nav>

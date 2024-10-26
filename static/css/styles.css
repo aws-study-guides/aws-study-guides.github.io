@@ -1,0 +1,406 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Flex settings for full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+/* Center the flashcard container */
+.flashcard {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flashcard-inner {
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Optional maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+.flashcard-inner .card-front,
+.flashcard-inner .card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+.flashcard-inner .card-front {
+    background-color: #146fb438;
+    border: 2px solid #ccc;
+}
+
+.flashcard-inner .card-back {
+    background-color: #e7ffe6;
+    border: 2px solid #4caf50;
+    transform: rotateY(180deg);
+}
+
+.flashcard-inner.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.flashcard-inner.flipped .card-back {
+    transform: rotateY(0);
+}
+
+/* Flashcard navigation positioned below the flashcards */
+.flashcard-navigation {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    clear: both; /* Force it below flashcard content */
+    position: relative;
+}
+
+.flashcard-navigation button {
+    background-color: #146eb4;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.flashcard-navigation button:hover {
+    background-color: #ff9900;
+}
+
+#progressIndicator {
+    font-size: 16px;
+}
+.navbar {
+    width: 100%;
+    background-color: #232f3e;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+.navbar-section a {
+    text-transform: uppercase; /* This will make the text all caps */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .navbar-title {
+        font-size: 18px;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+iframe, embed {
+    width: 100%;
+    border: none;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #146eb4;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .navbar-title {
+        font-size: 18px;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* AWS Exam Overview */
+.exam-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Left Column (Table) */
+.exam-table {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exam-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exam-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.exam-table td:first-child {
+    font-weight: bold;
+    width: 40%;
+}
+
+.exam-table td a {
+    color: #146eb4;
+    text-decoration: none;
+}
+
+.exam-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Right Column (Text + Badge) */
+.exam-details {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exam-details img {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.exam-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.exam-details a {
+    color: #146eb4;
+    text-decoration: none;
+}
+
+.exam-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .exam-info {
+        flex-direction: column;
+    }
+
+    .exam-details img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.options {
+    margin-bottom: 20px;
+}
+.options input {
+    margin-right: 10px;
+}
+.explanation {
+    display: none;
+    background: #146fb438;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    white-space: pre-line; /* Preserve line breaks */
+}
+.explanation strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.explanation a {
+    color: #146eb4;
+    text-decoration: none;
+}
+.explanation a:hover {
+    text-decoration: underline;
+}
+.submit-all {
+    margin-top: 20px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #146eb4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-all:hover {
+    background-color: #ff9900;
+}
+
+/* Styling for the result */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7ffe6; /* Light green background */
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2em;
+    display: none;
+}
+
+#result h3 {
+    margin-top: 0;
+    color: #4caf50; /* Green text for the result heading */
+}
+
+#goTop, #goBottom {
+    position: fixed;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #146eb4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#goTop { bottom: 80px; }
+#goBottom { bottom: 40px; }
+#goTop:hover, #goBottom:hover {
+    background-color: #ff9900;
+}
+
+/* Breadcrumb Styles */
+.breadcrumbs {
+    font-size: 14px;
+    margin: 10px 20px;
+    color: #333;
+}
+
+.breadcrumbs a {
+    color: #146eb4;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .breadcrumb-current {
+    color: #555;
+}
+
+/* Navbar Breadcrumb Style */
+.navbar-title, .navbar-section {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-section {
+    margin-left: 8px;
+    font-size: 18px;
+    color: #ff9900;
+}

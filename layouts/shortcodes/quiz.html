@@ -1,0 +1,35 @@
+<!-- quiz.html -->
+<div class="quiz">
+    <div id="result"></div>
+    <form id="test-form"></form>
+    <button class="submit-all" onclick="submitTest()">Submit Test</button>
+</div>
+
+<!-- Go to Top and Bottom buttons -->
+<button id="goTop" onclick="scrollToTop()">↥</button>
+<button id="goBottom" onclick="scrollToBottom()">↧</button>
+
+<script>
+    const questionSet = "{{ .Page.Params.question_set }}";
+    // Scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Scroll to the bottom of the page
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
+    // Function to be called after test submission
+    function scrollToTopAfterSubmit() {
+        scrollToTop();
+    }
+</script>
+<script src="{{ "js/main.js" | relURL }}" defer></script>

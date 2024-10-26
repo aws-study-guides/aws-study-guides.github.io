@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS Study Guides</title>
+    <link>https://aws-study-guides.github.io/</link>
+    <description>Recent content on AWS Study Guides</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://aws-study-guides.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAA-C03 Exam Overview</title>
+      <link>https://aws-study-guides.github.io/saa/overview/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://aws-study-guides.github.io/saa/overview/</guid>
+      <description>&lt;div class=&#34;container&#34;&gt;&#xA;    &lt;div class=&#34;section&#34;&gt;&#xA;        &lt;h1&gt;AWS Certified Solutions Architect - Associate (SAA-C03) Practice&lt;/h1&gt;&#xA;        &lt;div class=&#34;exam-info&#34;&gt;&#xA;            &#xA;            &lt;div class=&#34;exam-table&#34;&gt;&#xA;                &lt;table&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Category&lt;/td&gt;&#xA;                        &lt;td&gt;Associate&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Exam duration&lt;/td&gt;&#xA;                        &lt;td&gt;130 minutes&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Exam format&lt;/td&gt;&#xA;                        &lt;td&gt;65 questions; either multiple choice or multiple response&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Cost&lt;/td&gt;&#xA;                        &lt;td&gt;150 USD. Visit &lt;a href=&#34;https://aws.amazon.com/certification/policies/before-testing/#Exam_pricing&#34; target=&#34;_blank&#34;&gt;Exam pricing&lt;/a&gt; for additional cost information, including foreign exchange rates.&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Testing options&lt;/td&gt;&#xA;                        &lt;td&gt;Pearson VUE testing center or online proctored exam&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                    &lt;tr&gt;&#xA;                        &lt;td&gt;Languages offered&lt;/td&gt;&#xA;                        &lt;td&gt;English, French (France), German, Italian, Japanese, Korean, Portuguese (Brazil), Simplified Chinese, Spanish (Latin America), Spanish (Spain), and Traditional Chinese&lt;/td&gt;&#xA;                    &lt;/tr&gt;&#xA;                &lt;/table&gt;&#xA;            &lt;/div&gt;&#xA;&#xA;            &#xA;            &lt;div class=&#34;exam-details&#34;&gt;&#xA;                &lt;p&gt;&lt;b&gt;AWS Certified Solutions Architect - Associate&lt;/b&gt; is focused on the design of cost and performance optimized solutions. This is an ideal starting point for candidates with AWS Cloud or strong on-premises IT experience. This exam does not require deep hands-on coding experience, although familiarity with basic programming concepts would be an advantage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SAA-C03 Flashcards</title>
+      <link>https://aws-study-guides.github.io/saa/flashcards/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://aws-study-guides.github.io/saa/flashcards/</guid>
+      <description>&lt;div class=&#34;flashcards&#34;&gt;&#xA;    &lt;div class=&#34;flashcard-navigation&#34;&gt;&#xA;        &lt;button onclick=&#34;prevFlashcard()&#34;&gt;Previous&lt;/button&gt;&#xA;        &lt;span id=&#34;progressIndicator&#34;&gt;1 / 1&lt;/span&gt;&#xA;        &lt;button onclick=&#34;nextFlashcard()&#34;&gt;Next&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div id=&#34;flashcard&#34; class=&#34;flashcard&#34;&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;    const questionSet = &#34;json\/SAA_Qs_Final_With_Options.json&#34;;&#xA;&lt;/script&gt;&#xA;&lt;script src=&#34;https://aws-study-guides.github.io/js/flashcards.js&#34; defer&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>SAA-C03 Practice Test</title>
+      <link>https://aws-study-guides.github.io/saa/quiz/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://aws-study-guides.github.io/saa/quiz/</guid>
+      <description>&lt;div class=&#34;quiz&#34;&gt;&#xA;    &lt;div id=&#34;result&#34;&gt;&lt;/div&gt;&#xA;    &lt;form id=&#34;test-form&#34;&gt;&lt;/form&gt;&#xA;    &lt;button class=&#34;submit-all&#34; onclick=&#34;submitTest()&#34;&gt;Submit Test&lt;/button&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;button id=&#34;goTop&#34; onclick=&#34;scrollToTop()&#34;&gt;↥&lt;/button&gt;&#xA;&lt;button id=&#34;goBottom&#34; onclick=&#34;scrollToBottom()&#34;&gt;↧&lt;/button&gt;&#xA;&#xA;&lt;script&gt;&#xA;    const questionSet = &#34;json\/SAA_Qs_Final_With_Options.json&#34;;&#xA;    &#xA;    function scrollToTop() {&#xA;        window.scrollTo({&#xA;            top: 0,&#xA;            behavior: &#39;smooth&#39;&#xA;        });&#xA;    }&#xA;&#xA;    &#xA;    function scrollToBottom() {&#xA;        window.scrollTo({&#xA;            top: document.body.scrollHeight,&#xA;            behavior: &#39;smooth&#39;&#xA;        });&#xA;    }&#xA;&#xA;    &#xA;    function scrollToTopAfterSubmit() {&#xA;        scrollToTop();&#xA;    }&#xA;&lt;/script&gt;&#xA;&lt;script src=&#34;https://aws-study-guides.github.io/js/main.js&#34; defer&gt;&lt;/script&gt;</description>
+    </item>
+  </channel>
+</rss>

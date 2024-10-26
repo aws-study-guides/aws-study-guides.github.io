@@ -1,0 +1,12 @@
+<div class="flashcards">
+    <div class="flashcard-navigation">
+        <button onclick="prevFlashcard()">Previous</button>
+        <span id="progressIndicator">1 / 1</span>
+        <button onclick="nextFlashcard()">Next</button>
+    </div>
+    <div id="flashcard" class="flashcard"></div>
+</div>
+<script>
+    const questionSet = "{{ .Page.Params.question_set }}";
+</script>
+<script src="{{ "js/flashcards.js" | relURL }}" defer></script>
