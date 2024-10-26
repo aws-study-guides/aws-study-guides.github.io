@@ -1,6 +1,6 @@
 # AWS Certification Study Guides
 
-Welcome to the my ([Reese Gerjekian](https://github.com/rgerjeki)) AWS Certification Study Guides repository! This project provides a comprehensive resource for individuals preparing for AWS certifications, starting with the **AWS Solutions Architect Associate (SAA-C03)** exam.
+Welcome to my ([Reese Gerjekian](https://github.com/rgerjeki)) AWS Certification Study Guides repository! I am currently studying for my SAA and decided to build a little project out of it (Not only for SAA, but future certs too!). This project provides a comprehensive resource for individuals preparing for AWS certifications, starting with the **AWS Solutions Architect Associate (SAA-C03)** exam.
 
 ## Study Guides
 
